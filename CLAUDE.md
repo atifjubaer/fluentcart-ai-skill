@@ -7,16 +7,24 @@ This project is built using FluentCart (v1.5.1) for WordPress.
 - All FluentCart page templates should be loaded via WordPress standard theme templates or overrides inside `fluent-cart/` subdirectory.
 - Always include single-line comments in code to document key actions.
 
+---
+
+## Advanced Reference Documentation Map
+
+When performing advanced integrations, consult the following relative documentation files:
+
+- **Custom Payment Gateways:** Read `references/payment-gateway-integration.md` for settings and gateway registration.
+- **Ghost Products (On-the-fly Items):** Read `references/ghost-product-selling.md` for dynamic triggers and cart filters.
+- **Dynamic & Persistent Fees:** Read `references/fee-system-guide.md` for surcharge and fee structures.
+- **Subscriptions & Billing Intervals:** Read `references/subscription-customization.md` for grace periods and intervals.
+- **Database Models & Query Builder:** Read `references/database-models-query-builder.md` for Eloquent model CRUD code.
+- **WordPress Hooks & Filters Catalog:** Read `references/hooks-actions-filters.md` for action events and filter hooks.
+- **REST API Endpoints & Webhooks:** Read `references/rest-api-endpoints-reference.md` and `references/rest-api-webhooks.md`.
+- **WP-CLI Commands:** Read `references/wp-cli-commands.md` for migrations and database imports.
+- **Classic Theme Development:** Read `references/theme-development-guide.md` for template overrides.
+
+---
+
 ## Command Reference
 - Link theme to local WordPress setup:
   `cmd /c mklink /J "C:\dhon\htdocs\fluentcart_theme\wp-content\themes\fluentfast" "."`
-
-## FluentCart Framework APIs
-### Key Actions:
-- `fluent_cart/template/before_content` (Breadcrumbs, headings)
-- `fluent_cart/product/render_product_header` (Product details purchase UI)
-- `fluent_cart/product/after_product_content` (Post-product widgets)
-
-### Key Filters:
-- `fluent_cart/product/add_to_cart_text` (Button text customization)
-- `fluent_cart/disable_auto_single_product_page` (Disables core templates layout)

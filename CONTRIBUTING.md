@@ -1,0 +1,35 @@
+# Contributing to FluentCart AI Developer Skill
+
+We welcome contributions to expand the scope and improve the quality of the FluentCart AI Developer Skill and guides!
+
+---
+
+## Contribution Guidelines
+
+To ensure that the documentation and configurations are easily consumable by both developers and AI agentic workflows (e.g. Antigravity/Gemini, Cursor, Claude Code), please follow these core guidelines:
+
+### 1. Relative Reference Pathing
+- All links within `SKILL.md` or other files MUST use **relative path links** (e.g., `references/payment-gateway-integration.md`).
+- **NEVER** use local-machine absolute paths (e.g., `file:///C:/Users/...` or similar) in the repository files, as they will break for other users and contributors.
+
+### 2. Code Block Comments Rule
+- Any code snippets (PHP, JavaScript, HTML, CSS) included in guides or inline code MUST contain **meaningful, descriptive single-line comments**.
+- This makes it easy for AI coding agents to follow the implementation context and write correct, readable code for the user.
+
+### 3. File Sizes and Indexing
+- Keep `SKILL.md` under **500 lines**.
+- If a section grows too long or requires detailed code implementations, split it off into a separate guide file in the `references/` directory, and add a link to it inside the `SKILL.md` index.
+
+---
+
+## Workflow
+
+1. **Fork the Repository**: Create your own copy of the repository on GitHub.
+2. **Create a Feature Branch**:
+   ```bash
+   git checkout -b feature/your-new-guide
+   ```
+3. **Make and Validate Changes**:
+   - Write or update guides in the `references/` directory.
+   - Run verification checks to ensure links are working correctly.
+4. **Submit a Pull Request (PR)**: Send your changes back to the main repository for review!

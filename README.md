@@ -4,30 +4,73 @@ A comprehensive, platform-agnostic knowledge base and instruction set for Fluent
 
 This repository provides ready-to-use configurations and rules for all major AI coding assistants, enabling them to write correct, compatible code for FluentCart out-of-the-box.
 
+---
+
 ## Features Covered
-- **WordPress Hooks & Filters**: Complete list of developer hooks and actions.
+- **Custom Payment Gateway Integration**: Register and implement your own payment processor (`AbstractPaymentGateway`) and checkout billing fields (`BaseGatewaySettings`).
+- **Ghost Product Selling (Non-Catalog Items)**: Sell custom, dynamically-priced items without creating them in the database.
+- **Fee System (Surcharges & Custom Fees)**: Apply dynamic cart surcharges via hooks or save persistent DB fees.
+- **Subscription Customization**: Configure renewal grace periods, custom billing intervals, and software license validity defaults.
+- **Database Models & Query Builder**: Query database records using Laravel Eloquent model classes (Orders, Customers, Subscriptions, and Products).
+- **WordPress Hooks & Filters**: Hook into order status transitions, payment events, and asset loadings.
+- **REST API & Webhooks**: Configure outgoing webhook event listeners and REST endpoints.
 - **Template System Overrides**: Folder structure, template hierarchy, and FSE block templates.
-- **Shortcodes & Gutenberg Blocks**: Full attributes, usage examples, and styling selectors.
-- **Elementor Integration**: Widgets reference and custom page-builder controls.
-- **Models & Database Tables**: Schema overview for orders, products, carts, and subscriptions.
 
 ---
 
-## One-Line Installation (CLI)
+## Installation & CLI Usage
 
-You can run this installer instantly on any machine (Windows, macOS, Linux) using Node's `npx` tool without even downloading the repository first:
+You can install this skill globally or run it on-demand using any major package manager:
 
-### Install globally & copy rules to the current directory:
+### 1. Global Installation (Recommended for Antigravity/Gemini)
+
+Install the CLI globally on your machine:
+
 ```bash
-npx fluentcart-ai-skill@latest
-# OR from GitHub directly:
-npx github:atifjubaer/fluentcart-ai-skill
+# Using npm
+npm install -g fluentcart-ai-skill
+
+# Using pnpm
+pnpm add -g fluentcart-ai-skill
+
+# Using yarn
+yarn global add fluentcart-ai-skill
+
+# Using bun
+bun add -g fluentcart-ai-skill
 ```
 
-### Options:
-- `npx fluentcart-ai-skill init` — Install global skill + copy project files (Default)
-- `npx fluentcart-ai-skill global` — Install global skill only (for Antigravity/Gemini)
-- `npx fluentcart-ai-skill project` — Copy project rule files only (for Cursor/Claude Code)
+Once installed, run the initializer globally to install the skill for Antigravity/Gemini:
+```bash
+fluentcart-ai-skill init
+```
+
+---
+
+### 2. On-Demand Execution (Recommended for Cursor/Claude Code)
+
+If you just want to initialize rules files in your current project directory on the fly without a global install:
+
+```bash
+# Using npm
+npx fluentcart-ai-skill init
+
+# Using pnpm
+pnpm dlx fluentcart-ai-skill init
+
+# Using yarn
+yarn dlx fluentcart-ai-skill init
+
+# Using bun
+bunx fluentcart-ai-skill init
+```
+
+---
+
+### CLI Command Options:
+- `fluentcart-ai-skill init` — Install global skill for Antigravity + copy project rules (`.cursorrules`, `CLAUDE.md`, `fluentcart-rules.md`) to the current directory (Default).
+- `fluentcart-ai-skill global` — Install the global Antigravity/Gemini skill only.
+- `fluentcart-ai-skill project` — Copy Cursor/Windsurf (`.cursorrules`) and Claude Code (`CLAUDE.md`) rules to the current directory only.
 
 ---
 
@@ -46,14 +89,29 @@ This repository covers 100% of the active agentic development platforms:
 ```
 fluentcart-ai-skill/
 ├── README.md                  # Installation and overview
-├── SKILL.md                   # Antigravity/Gemini configuration
+├── SKILL.md                   # Antigravity/Gemini configuration index
+├── CONTRIBUTING.md            # Guidelines for repository contributors
 ├── .cursorrules               # Cursor/Windsurf rules file
 ├── CLAUDE.md                  # Claude Code instructions
 ├── fluentcart-rules.md        # Plain text rules for web AIs
 ├── package.json               # NPM package configuration
-└── bin/
-    └── index.js               # CLI Node.js runner script
+├── bin/
+│   └── index.js               # CLI Node.js runner script
+└── references/                # Detailed developer guides
+    ├── database-models-query-builder.md
+    ├── fee-system-guide.md
+    ├── ghost-product-selling.md
+    ├── hooks-actions-filters.md
+    ├── payment-gateway-integration.md
+    ├── rest-api-webhooks.md
+    ├── subscription-customization.md
+    └── theme-development-guide.md
 ```
+
+---
+
+## Contributing
+We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to add new references, rules, or update existing documentation.
 
 ---
 

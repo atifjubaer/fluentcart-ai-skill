@@ -21,6 +21,7 @@ When performing advanced integrations, consult the following relative documentat
 - **WordPress Action & Filter Hooks:** Read `references/hooks-actions-filters.md` for a comprehensive list of order state transitions and templates loading hooks.
 - **REST API Endpoints & Webhooks:** Read `references/rest-api-endpoints-reference.md` and `references/rest-api-webhooks.md` to see route lists, auth structures, and webhook receiver payload samples.
 - **WP-CLI Commands:** Read `references/wp-cli-commands.md` for background database migrations, data diagnostics, and product imports.
+- **Easy Digital Downloads (EDD) Migration & Compatibility:** Read `references/edd-migration-compatibility-guide.md` to see CLI stages, schema mapping, and backward compatibility hooks.
 - **Classic Theme Development & Layout Overrides:** Read `references/theme-development-guide.md` for functions.php overrides, template hierarchies, and block theme support.
 
 ---

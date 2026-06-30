@@ -14,6 +14,7 @@ This repository provides ready-to-use configurations and rules for all major AI 
 - **Database Models & Query Builder**: Query database records using Laravel Eloquent model classes (Orders, Customers, Subscriptions, and Products).
 - **WordPress Hooks & Filters**: Hook into order status transitions, payment events, and asset loadings.
 - **REST API & Webhooks**: Configure outgoing webhook event listeners and REST endpoints.
+- **Easy Digital Downloads (EDD) Migration & Compatibility**: Migrate EDD stores via CLI/wizard and intercept legacy license calls.
 - **Template System Overrides**: Folder structure, template hierarchy, and FSE block templates.
 
 ---

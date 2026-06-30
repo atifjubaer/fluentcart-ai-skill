@@ -21,6 +21,7 @@ When performing advanced integrations, consult the following relative documentat
 - **WordPress Hooks & Filters Catalog:** Read `references/hooks-actions-filters.md` for action events and filter hooks.
 - **REST API Endpoints & Webhooks:** Read `references/rest-api-endpoints-reference.md` and `references/rest-api-webhooks.md`.
 - **WP-CLI Commands:** Read `references/wp-cli-commands.md` for migrations and database imports.
+- **Easy Digital Downloads (EDD) Migration & Compatibility:** Read `references/edd-migration-compatibility-guide.md` for CLI commands and backward compatibility.
 - **Classic Theme Development:** Read `references/theme-development-guide.md` for template overrides.
 
 ---

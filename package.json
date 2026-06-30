@@ -1,0 +1,19 @@
+{
+  "name": "fluentcart-ai-skill",
+  "version": "1.0.0",
+  "description": "CLI tool to install FluentCart AI developer skills and rules for Antigravity, Cursor, and Claude Code",
+  "main": "bin/index.js",
+  "bin": {
+    "fluentcart-ai-skill": "./bin/index.js"
+  },
+  "keywords": [
+    "fluentcart",
+    "wordpress",
+    "ai",
+    "cursor",
+    "claude-code",
+    "antigravity"
+  ],
+  "author": "Fastrsoft",
+  "license": "MIT"
+}

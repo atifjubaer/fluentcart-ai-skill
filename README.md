@@ -13,29 +13,21 @@ This repository provides ready-to-use configurations and rules for all major AI 
 
 ---
 
-## One-Line CLI Installation
+## One-Line Installation (CLI)
 
-Open your terminal in the skill repository directory and run the command matching your operating system:
+You can run this tool instantly on any machine using Node's `npx` tool without even downloading the repository first:
 
-### 1. Windows (PowerShell)
-To install globally for Antigravity:
-```powershell
-powershell -ExecutionPolicy Bypass -File .\install.ps1
-```
-To install globally *and* copy Cursor/Claude configs to your project directory (e.g. `C:\path\to\theme`):
-```powershell
-powershell -ExecutionPolicy Bypass -File .\install.ps1 -ProjectPath "C:\path\to\theme"
-```
-
-### 2. macOS & Linux (Bash)
-To install globally for Antigravity:
+### Install globally & copy rules to the current directory:
 ```bash
-chmod +x install.sh && ./install.sh
+npx fluentcart-ai-skill@latest
+# OR from GitHub directly:
+npx github:atifjubaer/fluentcart-ai-skill
 ```
-To install globally *and* copy Cursor/Claude configs to your project directory:
-```bash
-chmod +x install.sh && ./install.sh "/path/to/theme"
-```
+
+### Options:
+- `npx fluentcart-ai-skill init` — Install global skill + copy project files (Default)
+- `npx fluentcart-ai-skill global` — Install global skill only (for Antigravity/Gemini)
+- `npx fluentcart-ai-skill project` — Copy project rule files only (for Cursor/Claude Code)
 
 ---
 
@@ -55,10 +47,11 @@ fluentcart-ai-skill/
 ├── .cursorrules               # Cursor rules file
 ├── CLAUDE.md                  # Claude Code instructions
 ├── fluentcart-rules.md        # Plain text rules for web AIs
-├── install.ps1                # Windows installer script
-├── install.sh                 # Unix/Mac installer script
-└── references/
-    └── theme-development-guide.md  # Coding guide & helper functions
+├── package.json               # NPM package configuration
+├── bin/
+│   └── index.js               # CLI Node.js runner script
+├── install.ps1                # Legacy Windows installer
+└── install.sh                 # Legacy Unix/Mac installer
 ```
 
 ---

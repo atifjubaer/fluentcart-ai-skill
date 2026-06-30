@@ -22,6 +22,7 @@ For detailed code guides and API specifications, see the individual guides in th
 - [Action & Filter Hooks Reference](references/hooks-actions-filters.md) - Hook into order transitions, payment states, and control asset loads.
 - [REST API Endpoints Reference](references/rest-api-endpoints-reference.md) - Full list of API paths and payload schemas.
 - [REST API & Webhooks](references/rest-api-webhooks.md) - API endpoints, authorization tokens, and outgoing webhooks configuration.
+- [Shipping, Storage, Licensing & Order Bumps](references/shipping-storage-licensing.md) - Custom shipping rate carriers, storage driver APIs, and Pro licensing/bumps.
 - [Gutenberg Blocks & Elementor Widgets](references/gutenberg-blocks-elementor-widgets.md) - Editor block names and Elementor widgets catalog.
 - [WP-CLI Commands Reference](references/wp-cli-commands.md) - Syntax and options for backend database CLI tasks.
 - [Easy Digital Downloads (EDD) Migration & Compatibility](references/edd-migration-compatibility-guide.md) - Migrate EDD stores and handle legacy license API calls.

@@ -15,7 +15,7 @@ This repository provides ready-to-use configurations and rules for all major AI 
 
 ## One-Line Installation (CLI)
 
-You can run this tool instantly on any machine using Node's `npx` tool without even downloading the repository first:
+You can run this installer instantly on any machine (Windows, macOS, Linux) using Node's `npx` tool without even downloading the repository first:
 
 ### Install globally & copy rules to the current directory:
 ```bash
@@ -31,11 +31,14 @@ npx github:atifjubaer/fluentcart-ai-skill
 
 ---
 
-## Shared Platform Formats
+## Supported IDE Agents & Formats
 
-- **`.cursorrules`**: Copy this file to your theme folder root for **Cursor** to use.
-- **`CLAUDE.md`**: Copy this file to your theme folder root for **Claude Code CLI** to use.
-- **`fluentcart-rules.md`**: Paste these general rules directly into the web chat interface of **ChatGPT**, **Claude Web**, or any other chatbot.
+This repository covers 100% of the active agentic development platforms:
+
+1. **Antigravity / Gemini-based IDEs**: Configured automatically via `SKILL.md` and the `references/` directory.
+2. **Cursor / Windsurf**: Configured automatically via `.cursorrules` placed in your project root.
+3. **Claude Code (CLI)**: Configured automatically via `CLAUDE.md` in your project root.
+4. **General Web Chat AIs (ChatGPT, Claude Web, Gemini)**: Paste the contents of `fluentcart-rules.md` directly into the chat session.
 
 ---
 
@@ -44,14 +47,12 @@ npx github:atifjubaer/fluentcart-ai-skill
 fluentcart-ai-skill/
 ├── README.md                  # Installation and overview
 ├── SKILL.md                   # Antigravity/Gemini configuration
-├── .cursorrules               # Cursor rules file
+├── .cursorrules               # Cursor/Windsurf rules file
 ├── CLAUDE.md                  # Claude Code instructions
 ├── fluentcart-rules.md        # Plain text rules for web AIs
 ├── package.json               # NPM package configuration
-├── bin/
-│   └── index.js               # CLI Node.js runner script
-├── install.ps1                # Legacy Windows installer
-└── install.sh                 # Legacy Unix/Mac installer
+└── bin/
+    └── index.js               # CLI Node.js runner script
 ```
 
 ---

@@ -29,4 +29,5 @@ When performing advanced integrations, consult the following relative documentat
 
 ## Command Reference
 - Link theme to local WordPress setup:
-  `cmd /c mklink /J "C:\dhon\htdocs\fluentcart_theme\wp-content\themes\fluentfast" "."`
+  `cmd /c mklink /J "C:\path\to\wordpress\wp-content\themes\your-theme-name" "."`
+

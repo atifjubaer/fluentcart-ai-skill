@@ -38,3 +38,26 @@ To ensure that the documentation and configurations are easily consumable by bot
    - Contributors can run these tools to pull updates from online docs or check link consistency.
    - The `scratch/` directory is git-ignored and can be used for custom temporary personal scripts.
 5. **Submit a Pull Request (PR)**: Send your changes back to the main repository for review!
+
+---
+
+## Auto-Updating Documentation via AI Agents
+
+If you are using an AI coding agent (like Antigravity, Plot, Windsurf, Cursor, or Claude Code) and want to sync the repository with the latest online FluentCart developer documentation, you can use the built-in tools.
+
+### The Update Prompt
+
+Copy and paste the following prompt directly into your AI coding assistant:
+
+```text
+Please help me update the FluentCart Developer skill references using the local scraping tools in the repository:
+1. Run the scraper script using: python tools/run_scraper.py
+2. Run the links corrector to resolve relative paths: python tools/fix_links.py
+3. Run the link validator to verify there are no broken references: python tools/validate_links.py
+4. If there are any updates, review the changes and commit them to git.
+```
+
+The scraper will fetch and convert the latest details from:
+- **Development Documentation**: https://dev.fluentcart.com/
+- **Full Documentation**: https://docs.fluentcart.com/
+

@@ -31,5 +31,10 @@ To ensure that the documentation and configurations are easily consumable by bot
    ```
 3. **Make and Validate Changes**:
    - Write or update guides in the `references/` directory.
-   - Run verification checks to ensure links are working correctly.
-4. **Submit a Pull Request (PR)**: Send your changes back to the main repository for review!
+   - Keep all code examples clear and include meaningful single-line comments in PHP/JS scripts.
+   - Run the local link validator script (if present locally in `scratch/validate_links.py`) to verify that all relative paths resolve correctly without broken targets.
+4. **Local Scraper Utilities**:
+   - Local helper tools (e.g. scrapers, formatters, checkers) should be stored in the `scratch/` directory.
+   - The `scratch/` directory is git-ignored by default to keep the repository history clean.
+5. **Submit a Pull Request (PR)**: Send your changes back to the main repository for review!
+

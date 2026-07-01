@@ -2,7 +2,11 @@
 
 FluentCart registers core REST routes under the `/wp-json/fluent-cart/v2/` namespace.
 
+For an exhaustive reference of all endpoints (including payloads, parameters, and responses for orders, products, customers, subscriptions, licenses, coupons, shipping, and dashboards), see:
+- [Exhaustive REST API Reference](rest-api-reference.md)
+
 ---
+
 
 ## 1. Authentication & Headers
 

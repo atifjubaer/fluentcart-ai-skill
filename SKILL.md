@@ -14,19 +14,25 @@ This skill is the central index and developer resource for building themes, plug
 For detailed code guides and API specifications, see the individual guides in the references directory:
 
 - [Custom Payment Gateway Integration](references/payment-gateway-integration.md) - Register and implement your own payment processor, boot settings, and process refunds.
+- [Paddle Payment Gateway Case Study](references/paddle-gateway-case-study.md) - Complete production-ready reference code and fields schemas for Paddle integration.
 - [Ghost Product Selling (Non-Catalog Items)](references/ghost-product-selling.md) - Sell dynamically defined products on-the-fly without database catalog setup.
 - [Fee System (Surcharges & Custom Fees)](references/fee-system-guide.md) - Inject dynamic calculations or persistent DB fees.
 - [Subscription Customization](references/subscription-customization.md) - Adjust grace periods, configure custom intervals, and set license defaults.
 - [Database Models & Query Builder](references/database-models-query-builder.md) - Query tables using FluentCart's Laravel Eloquent compatibility layer.
+- [Exhaustive Database Models Reference](references/database-models-reference.md) - Deep properties, fields, and relationships index for all 30+ tables.
 - [Database Schema Reference](references/database-schema-reference.md) - Tables, columns, and indexes mapping catalog.
 - [Action & Filter Hooks Reference](references/hooks-actions-filters.md) - Hook into order transitions, payment states, and control asset loads.
+- [Exhaustive Action Hooks Reference](references/hooks-actions-reference.md) - Catalog of all actions triggered across FluentCart lifecycle.
+- [Exhaustive Filter Hooks Reference](references/hooks-filters-reference.md) - Catalog of all filters allowing data modification in FluentCart.
 - [REST API Endpoints Reference](references/rest-api-endpoints-reference.md) - Full list of API paths and payload schemas.
+- [Exhaustive REST API Reference](references/rest-api-reference.md) - Detailed payloads, response formats, and parameters for all endpoints.
 - [REST API & Webhooks](references/rest-api-webhooks.md) - API endpoints, authorization tokens, and outgoing webhooks configuration.
 - [Shipping, Storage, Licensing & Order Bumps](references/shipping-storage-licensing.md) - Custom shipping rate carriers, storage driver APIs, and Pro licensing/bumps.
 - [Gutenberg Blocks & Elementor Widgets](references/gutenberg-blocks-elementor-widgets.md) - Editor block names and Elementor widgets catalog.
 - [WP-CLI Commands Reference](references/wp-cli-commands.md) - Syntax and options for backend database CLI tasks.
 - [Easy Digital Downloads (EDD) Migration & Compatibility](references/edd-migration-compatibility-guide.md) - Migrate EDD stores and handle legacy license API calls.
 - [Theme Development Guide](references/theme-development-guide.md) - Layout customization files, block support, and styling guidelines.
+
 
 ---
 

@@ -1,8 +1,11 @@
 # Action & Filter Hooks Reference
 
-This reference catalog provides the most commonly used hooks in the FluentCart lifecycle.
+This guide provides a high-level overview of common FluentCart hooks. For an exhaustive catalog of all available action and filter hooks, see:
+- [Exhaustive Action Hooks Reference](hooks-actions-reference.md) — Categorized by Orders, Subscriptions, Licenses, Cart, Customers, Products, Payments, Admin templates.
+- [Exhaustive Filter Hooks Reference](hooks-filters-reference.md) — Categorized by Settings, Orders, Products, Cart, Customers, Subscriptions, Integrations.
 
 ---
+
 
 ## 1. Action Hooks (Events)
 

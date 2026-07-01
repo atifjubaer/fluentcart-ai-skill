@@ -293,3 +293,11 @@ class GatewayProcessor extends AbstractPaymentGateway
     }
 }
 ```
+
+---
+
+## 4. Paddle Case Study & Admin Fields Schema
+
+For a production-ready implementation reference featuring one-time payments, subscription payments, webhooks, and UI custom fields configuration, see:
+- [Paddle Payment Gateway Case Study](paddle-gateway-case-study.md) - Details on composition settings classes, remote API wrappers, adjustment webhooks, and Vite asset managers.
+

@@ -2,7 +2,11 @@
 
 FluentCart uses an Eloquent-based ORM (compatible with Laravel's Query Builder and Eloquent ORM). This makes database CRUD operations, filtering, and relationship loading highly readable and clean.
 
+For a complete and exhaustive attribute-by-attribute documentation of all 30+ database models, see:
+- [Exhaustive Database Models Reference](database-models-reference.md) — Comprehensive guide on Order, OrderItem, Customer, Product, Subscription, Shipping/Tax, and Pro license models.
+
 ---
+
 
 ## 1. Core Data Models
 

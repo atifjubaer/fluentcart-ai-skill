@@ -82,6 +82,17 @@ This repository covers 100% of the active agentic development platforms:
 
 ---
 
+## How it Works
+
+AI coding agents use different mechanisms to load instructions and rules. This repository is built to support all of them:
+
+- **For Antigravity & Gemini**: The `SKILL.md` file serves as the main index with frontmatter triggers. The agent automatically detects when you are working on a FluentCart project and reads `SKILL.md` and the linked documents in `references/` to gain complete context.
+- **For Cursor, Windsurf, Kilo Code, and Open Code**: The `.cursorrules` file acts as the project instruction set. When the editor starts up, the AI assistant parses `.cursorrules` automatically and applies the guidelines and reference file patterns to its code generation.
+- **For Claude Code**: When launched in your project folder, Claude automatically detects and reads the `CLAUDE.md` file to understand the development workflow, build commands, and coding conventions.
+
+---
+
+
 ## Folder Structure
 ```
 fluentcart-ai-skill/

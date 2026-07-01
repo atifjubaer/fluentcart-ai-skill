@@ -1,2 +1,7 @@
 # Ignore the local scraper scratch tools directory
 scratch/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+

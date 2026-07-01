@@ -20,61 +20,56 @@ This repository provides ready-to-use configurations and rules for all major AI 
 
 ---
 
-## Installation & CLI Usage
+## Installation
 
-You can install this skill globally or run it on-demand using any major package manager:
+Choose the installation method that fits your environment and AI coding assistant:
 
-### 1. Global Installation (Recommended for Antigravity/Gemini)
+### Method 1: The `skills.sh` Method (Recommended for Cursor, Claude Code, Windsurf, Open Code)
 
-Install the CLI globally on your machine:
-
-```bash
-# Using npm
-npm install -g fluentcart-ai-skill
-
-# Using pnpm
-pnpm add -g fluentcart-ai-skill
-
-# Using yarn
-yarn global add fluentcart-ai-skill
-
-# Using bun
-bun add -g fluentcart-ai-skill
-```
-
-Once installed, run the initializer globally to install the skill for Antigravity/Gemini:
-```bash
-fluentcart-ai-skill init
-```
-
----
-
-### 2. On-Demand Execution (Recommended for Cursor/Claude Code)
-
-If you just want to initialize rules files in your current project directory on the fly without a global install:
+You can install this skill directly into your project's local workspace using the agent-agnostic `skills.sh` manager:
 
 ```bash
 # Using npm
-npx fluentcart-ai-skill init
+npx skills add atifjubaer/fluentcart-ai-skill
 
 # Using pnpm
-pnpm dlx fluentcart-ai-skill init
-
-# Using yarn
-yarn dlx fluentcart-ai-skill init
+pnpm dlx skills add atifjubaer/fluentcart-ai-skill
 
 # Using bun
-bunx fluentcart-ai-skill init
+bunx skills add atifjubaer/fluentcart-ai-skill
+```
+*This downloads the skill metadata and automatically configures it in your project's agent directory (e.g., `.cursor/skills/` or `.continue/skills/`).*
+
+---
+
+### Method 2: The Direct CLI Initializer (Recommended for Antigravity, Gemini, & Local Rules)
+
+To install the global Antigravity/Gemini developer skill and initialize project rules files (`.cursorrules`, `CLAUDE.md`, `fluentcart-rules.md`) in your current directory on-the-fly:
+
+```bash
+# Initialize both global Gemini skill and current project rules
+npx github:atifjubaer/fluentcart-ai-skill init
+
+# Setup ONLY the global Antigravity/Gemini skill
+npx github:atifjubaer/fluentcart-ai-skill global
+
+# Setup ONLY the Cursor, Claude Code, and web AI rules in current project
+npx github:atifjubaer/fluentcart-ai-skill project
 ```
 
 ---
 
-### CLI Command Options:
-- `fluentcart-ai-skill init` — Install global skill for Antigravity + copy project rules (`.cursorrules`, `CLAUDE.md`, `fluentcart-rules.md`) to the current directory (Default).
-- `fluentcart-ai-skill global` — Install the global Antigravity/Gemini skill only.
-- `fluentcart-ai-skill project` — Copy Cursor/Windsurf (`.cursorrules`) and Claude Code (`CLAUDE.md`) rules to the current directory only.
+### Method 3: Manual Installation
+
+If you prefer manual setup:
+1. **For Antigravity / Gemini**: Copy the `SKILL.md` file and the `references/` directory into your global Gemini config path:
+   `~/.gemini/config/skills/fluentcart-developer/`
+2. **For Cursor / Windsurf**: Copy the `.cursorrules` file to your project's root directory.
+3. **For Claude Code**: Copy the `CLAUDE.md` file to your project's root directory.
+4. **For Web-based AIs**: Copy the content of `fluentcart-rules.md` and paste it into the start of your chat thread.
 
 ---
+
 
 ## Supported IDE Agents & Formats
 
@@ -92,14 +87,24 @@ This repository covers 100% of the active agentic development platforms:
 fluentcart-ai-skill/
 ├── README.md                  # Installation and overview
 ├── SKILL.md                   # Antigravity/Gemini configuration index
-├── CONTRIBUTING.md            # Guidelines for repository contributors
+├── CONTRIBUTING.md            # Guidelines for repository contributors & AI agent prompt
 ├── .cursorrules               # Cursor/Windsurf rules file
 ├── CLAUDE.md                  # Claude Code instructions
 ├── fluentcart-rules.md        # Plain text rules for web AIs
 ├── package.json               # NPM package configuration
 ├── bin/
 │   └── index.js               # CLI Node.js runner script
+├── tools/                     # Shared developer scripts
+│   ├── scrape_dev_docs.py     # Crawl & convert docs
+│   ├── run_scraper.py         # Batch orchestrator
+│   ├── fix_links.py           # Relative to absolute links corrector
+│   └── validate_links.py      # Relative links validator
 └── references/                # Detailed developer guides
+    ├── hooks-actions-reference.md
+    ├── hooks-filters-reference.md
+    ├── database-models-reference.md
+    ├── rest-api-reference.md
+    ├── paddle-gateway-case-study.md
     ├── database-models-query-builder.md
     ├── fee-system-guide.md
     ├── ghost-product-selling.md
@@ -109,6 +114,7 @@ fluentcart-ai-skill/
     ├── subscription-customization.md
     └── theme-development-guide.md
 ```
+
 
 ---
 
